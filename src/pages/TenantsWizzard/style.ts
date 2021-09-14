@@ -1,5 +1,6 @@
 import { makeStyles, withStyles, Theme } from "@material-ui/core/styles";
 import { StepConnector, Button } from "@material-ui/core";
+import { ImportantDevices } from "@material-ui/icons";
 
 export const ColorlibConnector = withStyles({
     "@keyframes fadeIn": {
@@ -74,6 +75,7 @@ export const useStyles = makeStyles((theme) => ({
 
         backgroundColor: "white",
         width: "70vw",
+
         maxWidth: "800px",
         minHeight: "70vh",
 
@@ -85,6 +87,13 @@ export const useStyles = makeStyles((theme) => ({
         paddingBottom: "2rem",
 
         boxShadow: "1px 1px 11px 2px rgba(0,0,0,0.44)",
+
+        [theme.breakpoints.down('sm')]: {
+            width: '100%',
+            margin: 'auto !Important',
+            padding:'5rem',
+            boxShadow: "none",
+        },
     },
     instructions: {
         marginTop: theme.spacing(1),

@@ -1,8 +1,7 @@
 import React from "react";
 
 import { withStyles } from "@material-ui/core/styles";
-import { Box, TextField } from "@material-ui/core";
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { Box, TextField, useMediaQuery } from "@material-ui/core";
 
 import {styles} from './style';
 
