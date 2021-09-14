@@ -90,9 +90,10 @@ export const useStyles = makeStyles((theme) => ({
 
         [theme.breakpoints.down('sm')]: {
             width: '100%',
+            height:'100%',
             margin: 'auto !Important',
-            padding:'5rem',
             boxShadow: "none",
+            maxWidth: "none",
         },
     },
     instructions: {
